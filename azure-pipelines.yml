@@ -12,7 +12,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
 - task: DockerCompose@0
   inputs:
     containerregistrytype: 'Azure Container Registry'
@@ -20,3 +19,5 @@ steps:
     azureContainerRegistry: '{"loginServer":"wwwrtrtyutui.azurecr.io", "id" : "/subscriptions/5c3e183b-d791-4374-9c47-67ced35226c5/resourceGroups/test2/providers/Microsoft.ContainerRegistry/registries/wwwrtrtyutui"}'
     dockerComposeFile: 'Dockerfile'
     action: 'Build services'
+
+
